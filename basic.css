@@ -1,0 +1,45 @@
+/* 
+ * CSS Style sheet for Basic Margins
+ * Author: Alex Bluhm
+ */
+ 
+ h1 {
+	 text-align: center;
+	 font-size: 50px;
+ }
+ 
+ h2 {
+	 text-align: center;
+ }
+ 
+ .explanation {
+	 width: 600px;
+	 margin: auto;
+ }
+ 
+ .subHeading {
+	 font-size: 30px;
+	 width: 400px;
+	 margin: auto;
+	 font-weight: bold;
+ }
+ 
+ .loop-tester {
+	 width: 400px;
+	 margin: auto;
+	 border: 3px solid #000000;
+	 padding-right: 10px;
+	 padding-left: 10px;
+ }
+ 
+ #table1 {
+	 width: 200px;
+	 margin: auto;
+ }
+ 
+ button {
+	 font-weight: bold;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 100px;
+ }
