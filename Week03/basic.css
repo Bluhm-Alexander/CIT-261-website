@@ -37,6 +37,12 @@
 	 margin: auto;
  }
  
+ #table2 {
+	 width: 200px;
+	 margin: auto;
+	 text-align: left;
+ }
+ 
  button {
 	 font-weight: bold;
 	 margin-top: 10px;
