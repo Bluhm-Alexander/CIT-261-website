@@ -51,3 +51,16 @@ function problem2(name1, age1) {
 		document.getElementById("output2").innerHTML = "Please enter a valid age";
 	}
 }
+
+function problem3() {
+	var car = [];
+	car["make"] = "Hyundai";
+	car["model"] = "Elantra";
+	car["year"] = 2004;
+	
+	table2.rows[1].cells[1].innerHTML = car["make"];
+	table2.rows[2].cells[1].innerHTML = car["model"];
+	table2.rows[3].cells[1].innerHTML = car["year"];
+	
+	
+}
