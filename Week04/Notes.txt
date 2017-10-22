@@ -1,0 +1,34 @@
+Notes for Javascript inheritence, Object Creation, Properties, Methods and Instantiation. 10-5-2017
+
+Inheritance in Javascript is Prototype based instead of a class inheriting from another class.
+All children of the Inherited object can use the parent functions methods but in order to do
+any of this we have to do it through prototypes. You can also do class inheritance with
+other types of instantiation as well.
+
+The 4 main ways of instantiating methods are: Functional Instantiation,
+Functional Shared Instantiation, Prototypal Instantiation and pseudoclassical
+Instantiation.
+
+This is a very good article explaining the differences and pros and cons of
+all of these Instantiation techniques.
+https://medium.com/dailyjs/instantiation-patterns-in-javascript-8fdcf69e8f9b
+
+The following are the four types of instantiation in javaScript
+Functional - This is where we define the properties and methods of an object with a function
+
+Functional-shared - is where you have a function that then points to the methods outside the function.
+Never use this because it kind of sucks it is good for saving memory thats it.
+
+Prototypal - is where you create an object inside of a function and use the default constructor to pass in its methods.
+It has a distinct advantage in terms of memory usage because function definitions are outside the function
+they are not duplicated in memory as it is with functional instantiation.
+
+Pseudoclassical - Where you define the function explicitly as a prototype is very useful for inheritance.
+
+Protypal inheritence is funny because you inherit methods and properties but you also
+overwrite any methods in the child object.
+
+CS3 stuff animations
+https://developer.apple.com/library/content/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/AnimatingWithKeyframes/AnimatingWithKeyframes.html
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations

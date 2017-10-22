@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Thi is Week04 Coding assignment for CIT 261 In this project I will cover:
+Object Creation Functions, Inheritance, Properties, Methods, Instantiation.
+-->
+<html>
+    <head>
+        
+        <title>Week04 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week04-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+
+	<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Object Creation Functions, Inheritance,<br>
+		Properties, Methods and Instantiation</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week04-Coding.js</h2>
+		
+		<div class="explanation">
+			<p>Located in the Week04-Coding.js file is the code that is used
+			to test out the following concepts: Object Creation Functions, 
+			Inheritance, Properties, Methods, Instantiation.</p>
+		</div>
+		
+		<div class="subHeading">
+			Problem 1: Inheritance, Instantiation and Object Creation
+		</div>
+		
+		<!--Problem 1-->
+		
+		<div class="loop-tester">
+			<p> This function calls the <b>getName() and getAge()</b> functions in javascript which
+			belong to two different created Objects where the Son Object Inherits functions and variables
+			from the Father Object. All the methods for the Object are written in pseudoclassical
+			Instantiation.</p>
+			<br>
+			<p id="fatherOut">father.getName() output</p>
+			<p id="sonOut">son.getName() output</p>
+			<p id="sonOut2">son.getAge() output</p>
+			
+			<button type="button" onclick="problem1()">Answer</button>
+		</div>
+		
+		<div class="subHeading">
+			Problem 2: Properties, Methods and Instantiation.
+		</div>
+		
+		<!--Problem 2-->
+		
+		<div class="loop-tester">
+			<p> This function calls <b>problem2()</b> in the javascript file. 
+			problem2() will Instantiate two objects using functional Instantiation and Protypal
+			Instantiation. The two objects will return the properties of instantiated objects. A note must be 
+			made here about <b>Functional Shared Instantiation</b> I wrote it in problem3 because I think it's weird.</p>
+			<br>
+			<h3>Functional Instantiation of Object Watermellon</h3>
+			<p>The Color of the Watermellon is: <span id="watermellonColor">Color</span></p>
+				<img src="Ellipsoid.png" alt="" style="position: relative; top: 0px; left: 0px;" />
+			
+				
+			<form>
+				<p>a = <input type="number" maxlength="2" id="a" min="0"> <br>
+				b = <input type="number" maxlength="2" id="b" min="0"> <br>
+				c = <input type="number" maxlength="2" id="c" min="0"></p>
+			</form>	
+			<p><b>Size of mellon: </b><span id="WatermellonSize">0</span></p>
+			<p>Water Mellon has seeds: <span id="watermellonSeeds">?</span></p>
+			
+			<h3>Prototypal Instantiation of Object Dog</h3>
+			
+			<p>Breed of Dog: <span id="dogBreed">Unknown</span></p>
+			<p>Weight of Dog: <span id="dogWeight"> 0 </span></p>
+			<p>The Mood of the Dog: <span  id="dogMood">void</span></p>
+			
+			<button type="button" onclick="problem2()">Evaluate!</button>
+		</div>
+		
+		<div class="subHeading">
+			Problem 3: Functional Shared Instantiation.
+		</div>
+		
+		<div class="loop-tester">
+			<p> This function calls <b>problem3()</b> in the javascript file. 
+			 Problem 3 instantiates an object using functional shared Instantiation. I don't
+			  really like this method of instantiation because I'm not sure why you would ever use it. 
+			  I could use some feedback on this as to why this is useful.
+			</p>
+			<br>
+			<h3>Functional Shared Instantiation of Object Truck</h3>
+			
+			<p>The Color of the truck is: <span id="truckColor">Color</span></p>
+			
+			<p>Type of truck: <span id="truckType">Unknown</span></p>
+			<p>Make of Truck: <span id="truckMake"> Unknown </span></p>
+			
+			<button type="button" onclick="problem3()">Instantiate!</button>
+		</div>
+		
+	</body>
