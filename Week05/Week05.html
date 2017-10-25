@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Thi is Week04 Coding assignment for CIT 261 In this project I will cover:
+Object Creation Functions, Inheritance, Properties, Methods, Instantiation.
+-->
+<html>
+    <head>
+        
+        <title>Week04 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week05-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+
+	<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>JSON Parsing and Stringify</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week05-Coding.js</h2>
+		
+		<div class="explanation">
+			<p>Located in the Week05-Coding.js file is the code that is used
+			to test out the following concepts: JSON Parsing and Stringifying Objects and Properties.</p>
+		</div>
+		
+		<div class="subHeading">
+			Problem 1: Creating and Reading a Json Object
+		</div>
+		
+		<!--Problem 1-->
+		
+		<div class="loop-tester">
+			<p> This function calls problem1() in the Javascript file. Problem1() simply creates a JSON object
+                stringifies it and then reads it.
+            </p>
+			<br>
+            <p>Name of the student: <span id="name"></span></p>
+			<p>Height of the student: <span id="height"></span></p>
+            <p>Likes of the student: <span id="likes"></span></p>
+			
+			<button type="button" onclick="problem1()">Create and Read</button>
+		</div>
+		
+		<div class="subHeading">
+			Problem 2: Loading in a JSON file from local Directory
+		</div>
+		
+		<!--Problem 2-->
+		
+		<div class="loop-tester">
+			<p> This function calls <b>problem2()</b> in the javascript file. 
+			problem2() will call in a file off of a JSON file in the week05 directory I think it will 
+                work on github but not locally on my machine with Chrome. This is more of a Curiosity
+            for me because the security aspect of Javascript fascinates me.</p>
+			<br>
+            <p>Stranger Things Season 2 Review: <span id="review"></span>
+                <br></p>
+                <p style="text-align: center"><b>Casting</b></p>
+            <p>    
+                Mike: <span id="mike"></span>
+                <br>
+                Dustin: <span id="dustin"></span>
+                <br>
+                Lucas: <span id="lucas"></span>
+            </p>
+			
+			<button type="button" onclick="problem2()">Load!</button>
+		</div>
+		
