@@ -1,0 +1,17 @@
+This week I am tackling JSON Objects
+
+There really isn't much to say about JSON objects other than it is really
+locked down. You can create JSON objects easily you can store them locally
+but if you want to bounce from page to page with a certain JSON object
+you have to have web server handle the transaction.
+
+For Security reasons JSON objects are really closely gaurded and for good reason
+most JSON objects are not encrypted in any sort of way and you don't want
+people loading in stuff into your javascript functions. 
+
+It is up to the browser for the amount of security that is to be employed
+as to what can be accessed. For example you can store JSON objects locally
+in the browser cache using localStorage.setItem("testJSON", myJSON);
+
+But you cant load in from another directory such as C:/users/school/ because
+it is a security violation at least with Chrome.

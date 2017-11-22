@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Thi is Week04 Coding assignment for CIT 261 In this project I will cover:
+Object Creation Functions, Inheritance, Properties, Methods, Instantiation.
+-->
+<html>
+    <head>
+        
+        <title>Week07 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week07-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Using XMLHTTPRequests to Consume a JSON web Service</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week07-Coding.js</h2>
+		
+		<div class="explanation">
+			<p>Located in the Week06-Coding.js file is the code that is used
+			to test out the following concepts: XMLHTTPRequests and JSON Web Service.</p>
+		</div>
+		
+		<div class="subHeading">
+			Problem1
+		</div>
+		
+		<!--Problem 1-->
+		
+		<div class="loop-tester">
+			<p>This Function calls problem1() in Week07-Coding.js file. It loads in a shopping list
+			which is displayed properly with no bells and whistles required.
+        </p>
+			
+		<h3>Shopping List</h3>
+			
+		<ol id="shopping">
+		</ol>
+			
+		<button type="button" onclick="problem1()">Display Shopping List</button>
+		</div>
+		
+		<div class="subHeading">
+			Notes on XMLHTTPRequests
+		</div>
+		
+		<div class="loop-tester">
+		<p>I've decided to include notes inside my web pages now because why not. JSON web services
+		are Web services or client side code that uses JSON to fill in information from the
+		server. For example I am using JavaScript to read and display the Contents of a JSON
+		file. This stuff is very useful for lets say displaying a catalog.</p>
+		
+		<p>XMLHTTPRequests is basically a way for the web server to serve information to the user.
+		To be more particular it is a API (Application program interface) that is integrated
+		into javascript. XMLHTTPRequest is an object that can be allocated and then passed information
+		in our particular case a JSON File.
+		
+		If the pass in was succeful and informatio is served properly we should get a 200 status.
+		There are other status's but listsing all of them would be exhaustive instead got to
+		<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"> this link</a> if
+		you want to see what all the different staus messages mean.
+		
+		</div>
+	</body>
+</html>
