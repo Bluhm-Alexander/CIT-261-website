@@ -3,7 +3,7 @@
 *   Author: Alexander Bluhm
 */
 //This is a Global variable used to store items in shoppping cart
-var cart = [];
+var array = [];
 var counter = 0;
 
 /*************************************************************************
@@ -24,14 +24,37 @@ function problem1(position) {
 	xmlhttp.send();
 
 	function myFunction(arr) {
-		var list = document.getElementById("shoppping");
+		var list = document.getElementById("shopping");
 		var i;
-		var entry = document.createElement("li");
-		for(i = 0; i < arr.length; i++) {
-			entry.appendChild(document.createTextNode(arr[i].groceries));
+		//var entry = document.createElement("li");
+		arr.forEach(function(arr) {
+			var entry = document.createElement("li");
+			entry.appendChild(document.createTextNode(arr.groceries));
 			list.appendChild(entry);
-		}
+			//document.getElementById("demo").innerHTML = arr.groceries;
+		})
 	}
 	
 }
 
+/******************************************************************************
+* Push Item onto Array
+*
+******************************************************************************/
+
+function pushItem(){
+	var x = {};
+	x.groceries = document.getElementById("textfield").value;
+	array.push(x);
+	document.getElementById("textfield").value = "";
+}
+
+/******************************************************************************
+* Display the contents of the array stringified
+*****************************************************************************/
+
+function displayJSON() {
+	var myJSON = JSON.stringify(array);
+	document.getElementById("demo").innerHTML = myJSON;
+
+}
