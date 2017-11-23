@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Thi is Week08 Coding assignment for CIT 261 In this project I will cover:
+Local storage API, storing and retrieving Simple Data, Arrays, Associative
+arrays, and Objects.
+-->
+<html>
+    <head>
+        
+        <title>Week08 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week07-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Using Local Storage API to Store Variables</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week08-Coding.js</h2>
+		
+		<div class="explanation">
+			<p>Located in the Week08-Coding.js file is the code that is used
+			to test out the following concepts: Storing information on
+			client PCs to preserve and display data between web pages.</p>
+		</div>
+		
+		<div class="subHeading">
+			Problem 1: Make a Multi Page Information Display
+		</div>
+		
+		<!--Problem 1-->
+		
+		<div class="loop-tester">
+			<p>This Function calls problem1() in Week08-Coding.js file.
+			The form below will have several input fields which will be stored
+			in a sessionStorage Object.
+			
+        </p>
+			
+			 
+		<h3>Shopping List</h3>
+			
+		<ol id="shopping">
+		</ol>
+			
+		<button type="button" onclick="problem1()">Display Shopping List</button>
+		</div>
+		
+		<div class="subHeading">
+			JSON File Generator
+		</div>
+		
+		<div class="loop-tester">
+			<p>Enter in The Item</p>
+			<input type="text" id="textfield">
+			<button type="button" onclick="pushItem()">Push!</button>
+			<button type="button" onclick="displayJSON()">Display!</button>
+			<br>
+			<p id="demo">Output of Stringified array</p>
+		</div>
+		
+		<br>
+		
+		<div class="subHeading">
+			Notes on Local Storage API
+		</div>
+		
+		<div class="loop-tester">
+		<p>There are two different Storage Types available to us in the 
+		localStorage API. The first one i the local storage object. 
+		Local storage objects save information to the clients computer and
+		that information will be stored without a experation date. The 
+		only thing that can expire said information is when the client clears
+		the browser's cache.You can also clear a local storage object with
+		<b>localStorage.removeItem("item");</b>.
+		</p>
+		
+		<p>The other type of S</p>
+		
+		</div>
+	</body>
+</html>
