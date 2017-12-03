@@ -60,3 +60,18 @@ tr:nth-child(even) {
 	 margin-bottom: 10px;
 	 width: 100px;
  }
+ 
+ .container{
+    width: 100%;
+    float: center;
+    text-align: center;
+}
+.container button{
+    display: inline-block;
+}
+#btn1{
+    float:left;
+}
+#btn3{
+    float:right;
+}

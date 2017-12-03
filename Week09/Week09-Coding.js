@@ -1,60 +1,66 @@
 /*
-*	Week04-Coding.js
+*	Week09-Coding.js
 *   Author: Alexander Bluhm
 */
-//This is a Global variable used to store items in shoppping cart
-var array = [];
-var counter = 0;
 
-/*************************************************************************
-* Read in things from JSON File and put them in a list.
-**************************************************************************/
-function problem1(position) {
+function setWidth() {
+	document.getElementById("firstdiv").style.width = "800px";
+}
+
+var counter = 100;
+var setter = 400;
+function setCrazy() {
 	
-	var xmlhttp = new XMLHttpRequest();
-	var url = "test.json";
+	setTimeout(function () {
+		
+      document.getElementById("firstdiv").style.width = setter+"px";          //  your code here   
+		
+      if (counter > -1) {
+		  setCrazy();      //  decrement i and call myLoop again if i > 0
+			--counter;
+			setter++;
+	  }
+   }, 100)
+}
 
-	xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			var myArr = JSON.parse(this.responseText);
-			myFunction(myArr);
-		}
-	};
-	xmlhttp.open("GET", url, true);
-	xmlhttp.send();
+function setOriginal() {
+	document.getElementById("firstdiv").style.width = "400px";
+	counter = 100;
+	setter = 400;
+}
 
-	function myFunction(arr) {
-		var list = document.getElementById("shopping");
-		var i;
-		//var entry = document.createElement("li");
-		arr.forEach(function(arr) {
-			var entry = document.createElement("li");
-			entry.appendChild(document.createTextNode(arr.groceries));
-			list.appendChild(entry);
-			//document.getElementById("demo").innerHTML = arr.groceries;
-		})
+function changeText() {
+	//Editing and entire Class
+	var color = document.getElementById("textcolor").value;
+	var things = document.getElementsByClassName('lyrics');
+	
+	for (var i = 0; i < things.length; i++){
+		things[i].style.color = color;
 	}
 	
 }
 
 /******************************************************************************
-* Push Item onto Array
+* Change color of DIv
 *
 ******************************************************************************/
 
-function pushItem(){
-	var x = {};
-	x.groceries = document.getElementById("textfield").value;
-	array.push(x);
-	document.getElementById("textfield").value = "";
+function changeBack(){
+	var color = document.getElementById("favcolor").value;
+	var things = document.getElementById('lyricsbox')
+	
+	things.style.backgroundColor = color;
+	
 }
 
-/******************************************************************************
-* Display the contents of the array stringified
-*****************************************************************************/
+function leftText() {
+	document.getElementById("lyricbody").style.textAlign = "left";
+}
 
-function displayJSON() {
-	var myJSON = JSON.stringify(array);
-	document.getElementById("demo").innerHTML = myJSON;
+function centerText() {
+	document.getElementById("lyricbody").style.textAlign = "center";
+}
 
+function rightText() {
+	document.getElementById("lyricbody").style.textAlign = "right";
 }
