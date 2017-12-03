@@ -29,7 +29,7 @@ arrays, and Objects.
 		</div>
 		
 		<div class="subHeading">
-			Problem 1: Input Preservation With Session Storage
+			Problem 1: Associative Array Storage with JSON
 		</div>
 		
 		<!--Problem 1-->
@@ -67,12 +67,69 @@ arrays, and Objects.
 			</section>
 			</form>
 			<button type="button" onclick="problem1()">Display Page</button>
-			<p id="demo">Output</p>
 		</div>
 		
+		<div class="subHeading">
+			Problem 2: Input Preservation With Local Storage
+		</div>
+		
+		<div class="loop-tester">
+			<p>
+			This Function calls problem2() in Week08-Coding.js file.
+			The form below will have several input fields which will be stored
+			in a LocalStorage Object. Information will be stored in a local
+			object.
+			
+			Enter the selected thing and give it an attribute. Data is stored as two
+			individual entities in local Storage.
+			</p>
+			
+			<form>
+			<section>
+
+				<div style="float:left;margin-right:100px;width:100px;">
+					<input type="radio" name="thing" value="tomato">Tomato<br>
+					<input type="radio" name="thing" value="apple">Apple<br>
+					<input type="radio" name="thing" value="carrot">Carrot<br>  
+				</div>
+		
+				<div style="float:left;">
+					<input type="radio" name="state" value="happy"> Happy<br>
+					<input type="radio" name="state" value="sad"> Sad<br>
+					<input type="radio" name="state" value="angry"> Angry<br> 
+				</div>
+
+				<br style="clear:both;" />
+
+			</section>
+
+			</form>
+			<button type="button" onclick="problem2()">Display Page</button>
 		
 		
+		</div>
+		
+		<div class="subHeading">
+			Problem 2: Storing Single Numbers and Arrays of Numbers
+		</div>
+		
+		<div class="loop-tester">
+			<p>
+			From what I can tell Web Storage only allows string and numbers to
+			be stored as directly Accessible variables everything else has to
+			be done with JSON.
+			</p>
+			
+			<p>
+			I'm Going to Store The Following Numbers Individually:<br>
+			5<br>
+			3<br>
+			7<br>
+			</p>
 		<br>
+		<button type="button" onclick="problem3()">Display Page</button>
+		
+		</div>
 		
 		<div class="subHeading">
 			Notes on Local Storage API
@@ -80,15 +137,35 @@ arrays, and Objects.
 		
 		<div class="loop-tester">
 		<p>There are two different Storage Types available to us in the 
-		localStorage API. The first one i the local storage object. 
+		localStorage API. The first one is the local storage object. 
 		Local storage objects save information to the clients computer and
-		that information will be stored without a experation date. The 
+		that information will be stored without a expiration date. The 
 		only thing that can expire said information is when the client clears
-		the browser's cache.You can also clear a local storage object with
+		the browser's cache. You can also clear a local storage object with
 		<b>localStorage.removeItem("item");</b>.
 		</p>
 		
-		<p>The other type of storage is </p>
+		<p>The other type of storage is Session storage which only saves things
+		for as long as the user keeps the window or tab open. You can also use the
+		 removeItem() function and it works the same way.
+		</p>
+		
+		<p>
+		It should be mentioned that there are some security risks for using the 
+		web Storage API. Any javascript can modify it's contents so unless you
+		build some sort of hashing system with PHP or some other language
+		it is not a good Idea to store sensitive information in there.
+		</p>
+		
+		<p>
+		Now that all your variables are saved inside webstorage as JSON
+		objects you can now have some fun navigating to completely new pages
+		and being able to recover the information you have entered.
+		</p>
+		
+		<p>
+		Also you can only store strings into web Storage.
+		</p>
 		
 		</div>
 	</body>

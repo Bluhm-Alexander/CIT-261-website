@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Thi is Week08 Coding assignment for CIT 261 In this project I will cover:
+Local storage API, storing and retrieving Simple Data, Arrays, Associative
+arrays, and Objects.
+-->
+<html>
+    <head>
+        
+        <title>Week08 Coding Assignment Results Page</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+		<script type="text/javascript">
+        function codeAddress() {
+            myobj = JSON.parse(localStorage.getItem("resultStrings"));
+			
+			document.getElementById("op1").innerHTML = myobj.header;
+			
+			document.getElementById("op2").innerHTML = myobj.body;
+			
+			if(localStorage.getItem("option") == 1) {
+				var newobj = JSON.parse(sessionStorage.getItem("form"));
+				
+				
+				document.getElementById("op3").innerHTML = "First Name Field: " + newobj.firstName + "<br>" +
+				"Last Name Field: " + newobj.lastName + "<br>" +
+				"Gender Field: " + newobj.gender;
+			}
+			else if(localStorage.getItem("option") == 2) {
+				var thing = localStorage.getItem("thing")
+				document.getElementById("op3").innerHTML = "The object you have selected is a " + thing + " and it is " + localStorage.getItem("state") +".";
+			}
+			else if(localStorage.getItem("option") == 3) {
+				var list = sessionStorage.getItem("list");
+				var number1 = sessionStorage.getItem("number1");
+				var number2 = sessionStorage.getItem("number2");
+				var number3 = sessionStorage.getItem("number3");
+			
+				document.getElementById("op3").innerHTML = number1 + " * 3 = " + (number1 * 3) + "<br>" +
+				number2 + " * 2 = " + (number2 * 2) + "<br>" +
+				number3 + " * 16 = " + (number3 * 16) + "<br>" +
+				list + " if I try to index through this array by 5 and by 4 it only " +
+				"returns the charecters in the String and not the actual numbers. Index 4 = " + 
+				list[4] + " index 5 = " + list[5] + ".";
+				
+			}
+        }
+        window.onload = codeAddress;
+        </script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+		<p style="text-align: center;"> <a href="week08.html">Back to Input</a></p>
+	
+		<h1 id="op1">Should Not See</h1>
+		
+		<div class="loop-tester">
+			<p id="op2">Located in the Week08-Coding.js file is the code that is used
+			to test out the following concepts: Storing information on
+			client PCs to preserve and display data between web pages.</p>
+			
+			<p id="op3">
+			output
+			</p>
+		</div>
+		
+		
+		
+		</div>
+		
+	</body>
+</html>
