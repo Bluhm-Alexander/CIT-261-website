@@ -10,7 +10,7 @@ arrays, and Objects.
         <title>Week08 Coding Assignment</title>
 		<meta name="author" content="Alexander Bluhm">
         <link rel ="stylesheet" type="text/css" href="basic.css">
-        <script type="text/javascript" src="Week07-Coding.js"></script>
+        <script type="text/javascript" src="Week08-Coding.js"></script>
         <meta charset="windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -29,7 +29,7 @@ arrays, and Objects.
 		</div>
 		
 		<div class="subHeading">
-			Problem 1: Make a Multi Page Information Display
+			Problem 1: Input Preservation With Session Storage
 		</div>
 		
 		<!--Problem 1-->
@@ -37,31 +37,40 @@ arrays, and Objects.
 		<div class="loop-tester">
 			<p>This Function calls problem1() in Week08-Coding.js file.
 			The form below will have several input fields which will be stored
-			in a sessionStorage Object.
-			
-        </p>
-			
-			 
-		<h3>Shopping List</h3>
-			
-		<ol id="shopping">
-		</ol>
-			
-		<button type="button" onclick="problem1()">Display Shopping List</button>
+			in a sessionStorage Object. Information will be stored in a local
+			object.
+        </p>	
+		
+		<h3>Input Fields</h3>
+		<form>
+			<section>
+
+				<div style="float:left;margin-right:20px;">
+					<label for="firstname">First Name</label>
+					<input id="firstname" type="text" value="" name="firstname">
+				</div>
+
+				<div style="float:left;">
+					<label for="lastname">Last Name</label>
+					<input id="lastname" type="text" value="" name="lastname">
+				</div>
+
+				<br style="clear:both;" />
+
+			</section>
+
+			<section>
+				<select id="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			</section>
+			</form>
+			<button type="button" onclick="problem1()">Display Page</button>
+			<p id="demo">Output</p>
 		</div>
 		
-		<div class="subHeading">
-			JSON File Generator
-		</div>
 		
-		<div class="loop-tester">
-			<p>Enter in The Item</p>
-			<input type="text" id="textfield">
-			<button type="button" onclick="pushItem()">Push!</button>
-			<button type="button" onclick="displayJSON()">Display!</button>
-			<br>
-			<p id="demo">Output of Stringified array</p>
-		</div>
 		
 		<br>
 		
@@ -79,7 +88,7 @@ arrays, and Objects.
 		<b>localStorage.removeItem("item");</b>.
 		</p>
 		
-		<p>The other type of S</p>
+		<p>The other type of storage is </p>
 		
 		</div>
 	</body>
