@@ -1,0 +1,68 @@
+/* 
+ * CSS Style sheet for Basic Margins
+ * Author: Alex Bluhm
+ */
+ 
+ h1 {
+	 text-align: center;
+	 font-size: 50px;
+ }
+ 
+ h2 {
+	 text-align: center;
+ }
+ 
+ .explanation {
+	 width: 600px;
+	 margin: auto;
+ }
+ 
+ .subHeading {
+	 font-size: 30px;
+	 width: 400px;
+	 margin: auto;
+	 font-weight: bold;
+ }
+ 
+ .loop-tester {
+	 width: 400px;
+	 margin: auto;
+	 border: 3px solid #000000;
+	 padding-right: 10px;
+	 padding-left: 10px;
+ }
+ 
+ #table1 {
+	 width: 200px;
+	 margin: auto;
+ }
+ 
+ button {
+	 font-weight: bold;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 100px;
+ }
+ 
+ div#demo {
+	background: #9DCEFF;
+}
+
+div#opener {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+}
+
+div#rotBox {
+	position: relative;
+    
+}
+
+@keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {-webkit-transform: rotate(360deg);}
+    100% {background-color:red; left:0px; top:0px;}
+}

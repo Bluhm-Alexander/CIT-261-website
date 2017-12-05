@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+Thi is Week04 Coding assignment for CIT 261 In this project I will cover:
+Object Creation Functions, Inheritance, Properties, Methods, Instantiation.
+-->
+<html>
+    <head>
+        
+        <title>CSS3 Transitions and Animations</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week10-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+
+	<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>CSS3 Transitions and Animations Triggered by JavaScript</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week05-Coding.js</h2>
+		
+		<div class="explanation">
+			<p>Located in the Week10-Coding.js file is the code that is used
+			to test out the following concepts: CSS3 Transitions and Animations.</p>
+		</div>
+		
+		<div class="subHeading">
+			Problem 1: Basic Color Transitions Triggered by JavaScript
+		</div>
+		
+		<!--Problem 1-->
+		
+		<div class="loop-tester" id="demo">
+			<p> 
+			This function calls problem1() in the Javascript file. Problem1() simply changes the color
+			of the the background of the DivBox with a smooth transition.
+            </p>
+			<br>
+            
+			
+			<button onclick="problem1('#F0F')">Magenta</button>
+			<button onclick="problem1('#0C0')">Green</button>
+			<button onclick="problem1('#9DCEFF')">Origninal</button>
+		</div>
+		
+		<div class="subHeading">
+			Problem 2: Size Transformation Transition
+		</div>
+		
+		<!--Problem 2-->
+		
+		<div class="loop-tester">
+			<p> 
+			This function calls problem2() It grows and shrinks the Green Div Box.
+            </p>
+			<br>
+            
+			<div id="colorBox" style="background: green; width:100px; height:100px;"></div>
+			
+			<br><button onclick="problem2()">Grow and Shrink</button>
+		</div>
+		
+		<!--Problem 3-->
+		
+		
+		<div class="subHeading">
+			Problem 3: Rolling up Text Boxes
+		</div>
+		
+	
+		<div class="loop-tester">
+			<div class="loop-tester" id="opener">
+				<p> 
+				This function calls expand() and shrink() functions It rolls up the DIV Box.
+				It also Rolls down the div Box. This is a feature that is very handy for when
+				you have a lot of text to display.
+				</p>
+				<br>
+				
+				
+			</div>
+		<button onclick="shrink()">Shrink</button> <button onclick="expand()">Expand</button>
+		</div>
+		
+		<!--Problem 4-->
+		
+		<div class="subHeading">
+			Problem 4: Rotation Animation
+		</div>
+		
+	
+		<div class="loop-tester" style="height: 450px;">
+			<p>
+				The main difference between transitions and animations is key frames.
+				Transitions operate on properties alone. Animations depend on key frames.
+			</p>
+			
+			<div id="rotBox" style="background: red; width:100px; height:100px;"><img src="download.png"></div>
+			<button onclick="startAnimation()" style="margin-top: 210px">Start</button>
+			<button onclick="stopAnimation()" style="margin-top: 210px">Stop</button>
+		</div>
+		
+		<div class="subHeading">
+			Notes on CSS3 and WebKit Animations.
+		</div>
+		
+		<div class="loop-tester">
+			<p>
+				Let us first start with transitions. Simply put transitions are a prebuilt function
+				included in CSS3 where you can set a property inside the CSS tag and the element will change
+				its property smoothly and without intervention from Javascript. There are two settings
+				you have to set which is the type of transition and its duration.<br><br>
+				
+				As for Animation you must define the Keyframes of your animations. And then
+				trigger the event with either an event attribute with CSS such as hover or you trigger the event
+				with javascript. That is an important note all of these animations and Transitions can be done
+				by CSS alone. But it is a lot easier to use Javascript because Javascipt has window
+				events. It really depends on your situation.<br><br>
+				
+				Different rules can be acessed with CSS Animations with JavaScript:<br><br>
+				name<br>
+				cssRules<br>
+				appendRule()<br>
+				deleteRule()<br>
+				findRule()<br>
+			</p>
+			<br>
+ 
+		</div>
+		

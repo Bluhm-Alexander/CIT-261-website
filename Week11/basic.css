@@ -1,0 +1,79 @@
+/* 
+ * CSS Style sheet for Basic Margins
+ * Author: Alex Bluhm
+ */
+ 
+ h1 {
+	 text-align: center;
+	 font-size: 50px;
+ }
+ 
+ h2 {
+	 text-align: center;
+ }
+ 
+ .explanation {
+	 width: 600px;
+	 margin: auto;
+ }
+ 
+ .subHeading {
+	 position: relative;
+	 font-size: 30px;
+	 width: 400px;
+	 margin: auto;
+	 font-weight: bold;
+	 left: -400px;
+	 opacity: 0;
+ }
+ 
+ .loop-tester {
+	 position: relative;
+	width: 400px;
+	margin-top: auto;
+	margin-bottom: auto;
+	border: 3px solid #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	opacity: 0;
+	left: -400px;
+ }
+ 
+
+@keyframes slide {
+    100% { left: 0; }
+}
+ 
+ .wrapper {
+    margin: auto;
+    width: 400px;
+ }
+ 
+ #table1 {
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table2 {
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+ 
+ button {
+	 font-weight: bold;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 100px;
+ }

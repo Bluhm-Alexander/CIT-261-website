@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+Thi is Week11 Coding assignment for CIT 261 In this project I will cover:
+HTML5 Tags - Video, Audio, and Canvas.
+-->
+<html>
+    <head>
+        
+        <title>Week12 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week12-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="InitDemo();">
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Using HTML5 Tags: Video, Audio and Canvas</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week12-Coding.js</h2>
+		
+		<div class="explanation">
+			<p>Located in the HTML is the HTML5 Tags for Multi-Media</p>
+		</div>
+		
+		<div class="subHeading">
+			Problem 1: Play A Video on Repeat
+		</div>
+		
+		<!--Problem 1-->
+		
+		<div class="loop-tester" style="width: 700px;">
+			<p>
+			HTML5 Tags are very simple and efficient. They basically work by 
+			probing the directory for the file linked in the source and then it is
+			left up to the browser to Render and play the Video. In the tag it is also
+			important to define what file type the video is. MP4 is the most supported
+			Video Format so that is what I will be using. Also of note is that you can
+			Manipulate the properties of the video tag with DOM. So I have included three
+			buttons that change the size of the Video Display.<br><br> Also there is no sound in
+			this clip it is stock footage.
+			</p>
+		
+		<!--class="center"-->
+		
+			<video width="400px" controls loop id="video">
+				<source src="waterfall.mp4" type="video/mp4">
+			</video>
+			<br>
+			<button onclick="makeBig()">Big</button>
+			<button onclick="makeSmall()">Small</button>
+			<button onclick="makeNormal()">Normal</button>
+		
+		</div>
+		
+		<div class="subHeading">
+			HTML5 Music Player
+		</div>
+		
+		<div class="loop-tester">
+			<p>
+				There are only 3 main audio formats that are supported by HTML5. Those formats are
+				FLAC, WAVE, MP3 and OGG. Matroska or WEBM also has some limited support it
+				really depends on what the browsers can render. The safe route for most browsers
+				with Audio is MP3.
+			</p>
+				<audio controls>
+				  <source src="Latency.mp3" type="audio/mpeg">
+				If you are seeing this message it means your browser is too old.
+				</audio>
+			<br>
+		</div>
+		
+		<br>
+		
+		<div class="subHeading">
+			HTML5 Canvas
+		</div>
+		
+		<div class="loop-tester">
+			<p>
+				Canvas is very Interesting some time ago I used canvas to display a small triangle
+				with WebGL. I wrote this small program so I could break myself into OpenGL. the WebGL
+				code is located in the Javascript File.
+			</p>
+			
+			<canvas id="game-surface" width="400" Height="400">
+			Your Browser does not support HTML5, Must be using Internet Explorer 6
+			</canvas>
+			
+		</div>
+		
+		<div class="subHeading">
+			Additional Notes on WEBGL and Canvas
+		</div>
+		
+		<div class="loop-tester">
+		<p>
+			I don't think there is much to talk about in regards to HTML multi-media tags.
+			I've made notes up above you can refer to. No I want to focus on HTML Canvas.
+			HTML canvas is some pretty exciting stuff it can be used to make games with WEBGL
+			which is fairly efficient. Or you can draw simple shapes and text usually with Javascript<br><br>
+			
+			Canvas can repsond to events such as mouse clicks and key presses which are also handled
+			by java. By default Canvas has neither borders nor content whatever is drawn
+			within has to be coded into it. 
+		</p>
+		
+		</div>
+	</body>
+</html>

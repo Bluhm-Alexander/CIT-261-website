@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Thi is Week11 Coding assignment for CIT 261 In this project I will cover:
+Standard JavaScript events for Mobile Devices and Animations and Transition Events.
+-->
+<html>
+    <head>
+        
+        <title>Week11 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week11-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Using JavaScript Events and Animation and Transition Events</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week10-Coding.js</h2>
+		
+		<div class="explanation">
+			<p>Located in the Week06-Coding.js file is the code that is used
+			to test out the following concepts: Standard JavaScript Events 
+			Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.)
+			and Animation and Transition Events</p>
+		</div>
+		
+		<div class="subHeading">
+			Problem 1: On Page Load Slide in all DIV Boxes
+		</div>
+		
+		<!--Problem 1-->
+
+		<div class="wrapper">
+			<div class="loop-tester" id="all">
+				<p>
+				This is a simple event that will be triggered by the JavaScript onLoad
+				in the body tag of the HTML. it triggers a transition and animation where all the DIV
+				Boxes will Slide in from the left. Please refer to problem1() in the JavaScript.
+				It should be noted that onLoad can be triggered in HTML. But I'm going to do it in
+				Javscript as per instruction.
+				</p>
+			
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="subHeading">
+				Problem 2: onTouchStart The DIV Color Change 
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="loop-tester" style="height: 400px;" id="touch" ontouchstart="changeBlue()" ontouchend="changeWhite()">
+				<p>This Box will change Color when The User puts thier finger on
+				the screen and will change back to white when the finger is removed.</p>
+				
+			</div>
+		</div>
+		
+		<br>
+		
+		<div class="wrapper">
+			<div class="subHeading">
+				Notes on javascript events and Transition and Animation Events
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="loop-tester">
+				<p>
+					Standard JavaScript Event Handlers cover a wide variety of events. Here is
+					a link for the page I will be referencing at length for the entirety of this page
+					<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Link</a>. There are a few
+					ways you can handle events with JavaScript. For this page I'm mainly going to be
+					handling events from the HTML page itself. The HTML page listens for events that 
+					the user causes and then immediately executes JavaScript code in response to the
+					event.
+					<br><br>
+					For Problem1 I employed the onload function in the javascript itself because event handlers
+					can be hard coded into the Javascript file itself. This method is called bubbling and capturing.
+					This method was employed in the 90s and is not really used today. The standard syntax for hard coding
+					event Listeners: button[i].addEventListener("click", buttonClick, capture). Like I said
+					this method is old an unnecessary.
+					<br><br>
+					This all being said there are a couple other things to be said about event listeners.
+					HTML5 has listeners that are specific to mobile devices. An example would be the <b>Touch
+					Events</b>. onTouchStart is called when the user touches the screen, likewise
+					onTouchEnd is called when the user's finger stops touching the screen.
+				</p>
+			</div>
+		</div>
+		
+	</body>
+</html>
