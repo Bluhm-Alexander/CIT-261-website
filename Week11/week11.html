@@ -13,7 +13,7 @@ Standard JavaScript events for Mobile Devices and Animations and Transition Even
         <meta charset="windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onkeydown="" onkeyup="onKeyUp()">
 	
 		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
 	
@@ -49,14 +49,16 @@ Standard JavaScript events for Mobile Devices and Animations and Transition Even
 		
 		<div class="wrapper">
 			<div class="subHeading">
-				Problem 2: onTouchStart The DIV Color Change 
+				Problem 2: onTouchStart DIV Color Changer 
 			</div>
 		</div>
 		
 		<div class="wrapper">
 			<div class="loop-tester" style="height: 400px;" id="touch" ontouchstart="changeBlue()" ontouchend="changeWhite()">
 				<p>This Box will change Color when The User puts thier finger on it
-				the screen and will change back to white when the finger is removed.</p>
+				the screen and will change back to white when the finger is removed.
+				Note That Only This Box will change Listeners only listen for their
+				own boxes unless there is a global factor at play.</p>
 				
 			</div>
 		</div>
@@ -72,8 +74,34 @@ Standard JavaScript events for Mobile Devices and Animations and Transition Even
 				<p>Use The Arrow keys to move a animated sprite of 
 				Mario around the screen</p>
 				
-				<p>I got the KeyCodes for Javascript from this Website
+				<p>I got the KeyCodes for Javascript from this 
 				<a href="http://keycode.info/">Website</a></p>
+				
+				<p>Notice how the sprite is animated I did this entirely in CSS
+				The listeners are in Javascript as well.
+				</p>
+				
+				<div id="mariorun" onkeyup="onKeyUp()" style="position:relative;left:0; top:0;"></div>
+				
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="subHeading">
+				Problem 3: Animations and Event Listeners in CSS3
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="loop-tester" style="height: 500px;">
+				<p>
+					We will now experiment with CSS3's event listeners. We will use the hover
+					attribute and the active attributes specifically. CSS3 will Listen for the
+					events and will Transition.
+				</p>
+				<div id="expander"></div>
+				
+				<div id="rotator">Click Me!</div>
 				
 			</div>
 		</div>

@@ -45,45 +45,66 @@ function changeWhite() {
 }
 
 /*********************************************************************************
+* Must Prevent arrow keys from scrolling the webpage. Need to listen and disable 
+* HTML defaults
+**********************************************************************************/
+
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
+
+/*********************************************************************************
 * This Next Section is for My animated mario Sprite
 *
 *********************************************************************************/
 function leftArrowPressed() {
-	var element = document.getElementById("image1");
+	var element = document.getElementById("mariorun");
 	element.style.left = parseInt(element.style.left) - 5 + 'px';
+	element.style.animationPlayState = "running";
 }
 
 function rightArrowPressed() {
-	var element = document.getElementById("image1");
+	var element = document.getElementById("mariorun");
 	element.style.left = parseInt(element.style.left) + 5 + 'px';
+	element.style.animationPlayState = "running";
 }
 
-				function upArrowPressed() {
-				var element = document.getElementById("image1");
-				element.style.top = parseInt(element.style.top) - 5 + 'px';
-				}
+function upArrowPressed() {
+	var element = document.getElementById("mariorun");
+	element.style.top = parseInt(element.style.top) - 5 + 'px';
+	element.style.animationPlayState = "running";
+}
 
-				function downArrowPressed() {
-				var element = document.getElementById("image1");
-				element.style.top = parseInt(element.style.top) + 5 + 'px';
-				}
+function downArrowPressed() {
+	var element = document.getElementById("mariorun");
+	element.style.top = parseInt(element.style.top) + 5 + 'px';
+	element.style.animationPlayState = "running";
+}
 
-				function moveSelection(evt) {
-					switch (evt.keyCode) {
-						case 37:
-						leftArrowPressed();
-						break;
-						case 39:
-						rightArrowPressed();
-						break;
-						case 38:
-						upArrowPressed();
-						break;
-						case 40:
-						downArrowPressed();
-						break;
-						}
-					};
+function onKeyUp() {
+	var element = document.getElementById("mariorun");
+	element.style.animationPlayState = "paused";
+}
+
+function moveSelection(evt) {
+	switch (evt.keyCode) {
+		case 37:
+		leftArrowPressed();
+		break;
+		case 39:
+		rightArrowPressed();
+		break;
+		case 38:
+		upArrowPressed();
+		break;
+		case 40:
+		downArrowPressed();
+		break;
+	}
+};
 
 function controls()
 {
