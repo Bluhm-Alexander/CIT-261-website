@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+Thi is Week14 Coding assignment for CIT 261 In this project I will cover:
+Designing, Defining, and Triggering CSS3 Animations without Custom Libraries (Thought Library)
+-->
+<html>
+    <head>
+        
+        <title>Week15 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week15-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onkeydown="" onkeyup="onKeyUp()">
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Designing, Defining and Triggering CSS3 Animations</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week15-Coding.js</h2>
+		
+		
+		<div class="explanation">
+			<p>I'm testing the following concepts: Designing, Defining, and Triggering 
+			CSS3 Animations without Custom Libraries (Thought Library)</p>
+		</div>
+		
+		<div class="wrapper">
+			<div class="subHeading">
+				Problem 1: Animating Sprites
+			</div>
+			
+			<div class="loop-tester">
+				<p>
+					<b>Use The Arroy Keys to Control Mario</b>
+					<br><br>
+					You Can Use animations to create Sprite Animations by using a sprite sheet
+					like you would in conventional game programming. I will be using both
+					JavaScript and predefined animations to demonstrate this.
+				</p>
+				
+				<div id="mariorun"></div>
+				
+			<p id="displayx">x</p>
+			<p id="displayy">y</p>
+		
+			</div>
+
+		
+			<div class="subHeading">
+				Problem 2: Rainbow DIV
+			</div>
+
+		
+			<div class="loop-tester">
+				<p>This is hust a Simple Div Box That Changes to every color.
+				I'm going to make the animtion slow enough that it won't give anyone 
+				ceizures.</p>
+				<p>The important thing to remember is that Animations can encompass
+				color, position, sprites, you name it.</p>
+				
+				<div id="demo1">Crazy Colors</div>
+				
+				<button type="button" onclick="problem2()">Play / Pause</button>
+		
+			</div>
+			
+			<div class="subHeading">
+				Problem 3: Moving and Rotating A DIV
+			</div>
+			
+			<div class="loop-tester" style="height: 500px;">
+				<p>
+					You can Define predesignated tranforms in CSS animations
+					Giving them an almost 3D effect.
+				</p>
+				
+				<div id="demo2">
+				</div>
+				
+				<button type="button" onclick="problem3()">Play / Pause</button>
+			</div>
+	
+			<div class="subHeading">
+				Notes: CSS3 Animations Without Libraries
+			</div>
+
+			<div class="loop-tester">
+				<p>
+					Animations are very useful tools because of one huge factor.
+					You can make animations infinite and they can be easily called
+					with javaScript making your code mush easier to use and understand.
+					Such was the case with my animated mario sprite. There are multiple
+					keyframe sets all for different situations.
+					<br><br>
+					Animations are also powerful in the fact that you can use them either
+					to make tweens or play them in steps. Tweens are when you smoothly
+					transition an objact from on state to another. Steps are when wou move
+					or change your object in a jerky manor. Refer to my Mario Charecter if 
+					you would like to see stepping animations in action.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

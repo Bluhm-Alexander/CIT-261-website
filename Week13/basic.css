@@ -1,0 +1,148 @@
+/* 
+ * CSS Style sheet for Basic Margins
+ * Author: Alex Bluhm
+ */
+ 
+ h1 {
+	 text-align: center;
+	 font-size: 50px;
+ }
+ 
+ h2 {
+	 text-align: center;
+ }
+ 
+ .topnav {
+  overflow: hidden;
+  background-color: #0047ba;
+  margin: auto;
+  max-width: 800px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*5px 5px;*/
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.unused {
+  background-color: #4CAF50;
+  color: white;
+}
+ 
+ .explanation {
+	 width: 600px;
+	 margin: auto;
+ }
+ 
+ .subHeading {
+	 font-size: 30px;
+	 width: 400px;
+	 margin: auto;
+	 font-weight: bold;
+	 float: left;
+	 height: 0px;
+	 overflow: hidden;
+	 /*position: absolute;*/
+ }
+ 
+ .wrapper {
+	 width: 400px;
+	 margin: auto;
+	 /*overflow: hidden;*/
+ }
+ 
+ 
+ .loop-tester {
+	 width: 400px;
+	 border: 3px solid #000000;
+	 padding-right: 10px;
+	 padding-left: 10px;
+	 /*position: absolute;*/
+	 height: 0px;
+	 overflow: hidden;
+	 opacity: 0.0;
+ }
+ 
+ #demo1 {
+	 background-color: purple;
+	 margin-top: 100px;
+	 margin-bottom: 100px;
+	 height: 100px;
+	 width: 100px;
+ }
+ 
+ .spinny {
+	 -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+ }
+ 
+ .spinny:hover {
+	 -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+ }
+ 
+ #demo2 {
+	 background-color: orange;
+	 height: 100px;
+	 width: 100px;
+	 transition: background-color 1s linear 1s;
+ }
+ 
+ #demo2:hover {
+	 background-color: blue;
+ }
+ 
+ #demo3 {
+	 background-color: green;
+	 height: 100px;
+	 width: 100px;
+	 transition: background-color 2s, width 2s, height 2s ease-in 1s;
+
+ }
+ 
+ #demo3:hover {
+	 background-color: red;
+	  height: 130px;
+	 width: 150px;
+ }
+ 
+ #table1 {
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table2 {
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+ 
+ button {
+	 font-weight: bold;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 100px;
+ }

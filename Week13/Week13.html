@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Thi is Week04 Coding assignment for CIT 261 In this project I will cover:
+Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library)
+-->
+<html>
+    <head>
+        
+        <title>Week13 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week13-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Designing, Defining and Triggering CSS3 Transitions</h1>
+		
+		<div class="topnav">
+			  <a class="active" onclick="navBar(0)">Problem 1</a>
+			  <a class="active" onclick="navBar(1)">Problem 2</a>
+			  <a class="active" onclick="navBar(2)">Notes</a>
+			  <a class="active" style="float: right;" href="../index.html">To Index</a>
+		</div>
+		
+		<h2>This HTML document is linked to the JavaScript file Week10-Coding.js</h2>
+		
+		
+		<div class="explanation">
+			<p>Click the navigation Bar in order to open problems. I'm testing the following
+			concepts: Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library)</p>
+		</div>
+		
+		<div class="wrapper">
+			<div class="subHeading">
+				Problem 1: Sliding Box Left to Right
+			</div>
+			
+			<div class="loop-tester">
+				<p>Transitions are almost like Animations in a way. This is triggered with
+				Javascript.
+			</p>
+				
+			<div id="demo1"></div>
+				
+			<button type="button" onclick="problem1(1)">Play</button>
+			</div>
+
+		
+			<div class="subHeading">
+				Problem 2: Transition Delays and Types of Playback
+			</div>
+
+		
+			<div class="loop-tester">
+			<p>You can define quite a few different transitions. I will be using a box that
+			I will transition colors width and height.
+			</p>
+			<p>Orange to Blue Box with a Second Linear Delay Property</p>
+			
+			<div id="demo2"></div>
+			<p>Green to Red Box with no delay and expand and ease-in</p>
+			<div id="demo3"></div>
+		
+			</div>
+		
+		
+	
+			<div class="subHeading">
+				Notes: CSS3 Animations Without Libraries
+			</div>
+
+			<div class="loop-tester">
+				<p>
+					I will start out by talking about what exacly are CSS3 Animation Libraries are.
+					CSS3 Animation Libraries are custom built code that can be copy and pasted into
+					your CSS and Javascript Files directly.
+					<br><br>
+					I'm goin to write this library with animated menus and dynamically loaded 
+					information that will slide onto the screen without navigating to a new 
+					page.
+					<br><br>
+					It should be remembered that using animations for presenting information
+					is rather taxing on the web browser. Some Browsers just refuse to load 
+					certain transitions. I spent hours trying to get the DIV Boxes to slide
+					from left to right only to realize that such a feat was beyond me. So 
+					setelled for expanding and shrinking boxes.
+					<br><br>
+					All of my examples are very simple and only include opacity and margin transitions
+					Along with dynamically expanding and contracting with the use of transitions.
+					<br><br>
+					With transitions you can specify size, opacity, position, timing, type of 
+					animation and the delay on the animation.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

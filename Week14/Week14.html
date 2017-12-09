@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+Thi is Week14 Coding assignment for CIT 261 In this project I will cover:
+Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library)
+-->
+<html>
+    <head>
+        
+        <title>Week14 Coding Assignment</title>
+		<meta name="author" content="Alexander Bluhm">
+        <link rel ="stylesheet" type="text/css" href="basic.css">
+        <script type="text/javascript" src="Week14-Coding.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	
+		<p style="text-align: center;"> <a href="../index.html">Back to Index</a></p>
+	
+		<h1>Designing, Defining and Triggering CSS3 Transformations</h1>
+		
+		<h2>This HTML document is linked to the JavaScript file Week14-Coding.js</h2>
+		
+		
+		<div class="explanation">
+			<p>I'm testing the following concepts: Designing, Defining, and 
+			Triggering CSS3 Transforms without Custom
+			Libraries (Thought Library)</p>
+		</div>
+		
+		<div class="wrapper">
+			<div class="subHeading">
+				Problem 1: Transform a DIV Box To a Different Position
+			</div>
+			
+			<div class="loop-tester">
+				<p>
+					I'm going to do a simple transform of just moving this DIV Box to a different
+					position. I will do this with both t transition effect and without a effect.
+				</p>
+				
+				<div id="demo2"></div>
+				
+			<button type="button" onclick="moveBox()">Move Without Animation</button>
+			<button type="button" onclick="animateBox()">Move With Animation</button>
+			<button type="button" onclick="resetBox()">Reset</button>
+		
+			</div>
+
+		
+			<div class="subHeading">
+				Problem 2: Navigation Bar but with Spinny Buttons
+			</div>
+
+		
+			<div class="loop-tester">
+				<div class="topnav" style="margin-top: 100px;">
+			  <a class="spinny">Problem 1</a>
+			  <a class="spinny">Problem 2</a>
+			  <a class="spinny">Notes</a>
+			  <a class="spinny" style="float: right;">To Index</a>
+		</div>
+			</div>
+			
+			<div class="subHeading">
+				Problem 3: Rotating 3D Cube with Smooth Transforms
+			</div>
+			
+			<div class="loop-tester" style="height: 500px;">
+				<p>
+					I will be defining a DIV in HTML that CSS can transform.
+					I will use CSS to do an a sort of 3D perspective roatating along the
+					X-Axis.
+				</p>
+				
+				<div id="demo1">
+					<p>Some Text</p>
+				</div>
+				
+			<button type="button" onclick="rotX()">Play</button>
+			<button type="button" onclick="rotX180()">Rotate 180</button>
+			<button type="button" onclick="clean()">Reset</button>
+			
+				<p>Now For some 3D effects</p>
+				
+				<div id="demo3"></div>
+				<div id="demo4"></div>
+				
+			<button type="button" onclick="coolStuff()" style="margin-top: 150px;">3D Stuff</button>
+			<button type="button" onClick="resetStuff()">Reset</button>
+			</div>
+	
+			<div class="subHeading">
+				Notes: CSS3 Animations Without Libraries
+			</div>
+
+			<div class="loop-tester">
+				<p>
+					Let's start with what transformations are. Transformations are
+					the modification of CSS3 properties when an event has been triggered.
+					Specifically transformations are to do with position and orientation,
+					for example you can move a div box to another location within the 
+					webpage with a transform command.
+					<br><br>
+					You can also manipulate elements in a 3D space and skew the perspective.
+					You can use the transition property in CSS to smoothly accomplish these
+					transformation which will make the effect more pleasing to the user.
+					<br><br>
+					CSS3 is a very powerful style language which can render pretty much any
+					simple object that you can think of.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
